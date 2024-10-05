@@ -6,5 +6,5 @@ The game was built with [Anvil](https://en.wikipedia.org/wiki/Ubisoft_Anvil) eng
 
 # Sections
 
-- [Networking](https://gitlab.com/phoenix-network-ltd/ac-brotherhood-docs/-/wikis/Networking)
-- [Internals](https://gitlab.com/phoenix-network-ltd/ac-brotherhood-docs/-/wikis/Internals)
+- [Networking](/Networking.md)
+- [Internals](/Internals.md)
