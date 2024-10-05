@@ -10,7 +10,7 @@ The game communicates with services of:
  For specific information on networking see [GRO wikis](https://github.com/zeroKilo/GROBackendWV/wiki) and pages listed below.
 - [HTTP](https://github.com/zeroKilo/GROBackendWV/wiki/TCP-Webrequests)
 - [PRUDP](https://github.com/zeroKilo/GROBackendWV/wiki/PRUDP-Quazal-NetZ)
-- [RMC](https://gitlab.com/phoenix-network-ltd/ac-brotherhood-docs/-/wikis/RMC)
+- [RMC](/RMC.md)
 - [RC4 encryption](https://github.com/zeroKilo/GROBackendWV/wiki/QPacket-Encryption)
 - [Zlib compression](https://github.com/zeroKilo/GROBackendWV/wiki/QPacket-Compression)
 - [Duplicated Objects](https://github.com/zeroKilo/GROBackendWV/wiki/DO)

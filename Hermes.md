@@ -2,7 +2,7 @@ Hermes is the name of Ubisoft's engine module for online service management.
 
 # Overview
 
-Generally speaking, Hermes is a task-based facade (programming interface) for RMC services both from the original SDK (OSDK) and Ubisoft's custom RMC protocols (see [RMC](https://gitlab.com/phoenix-network-ltd/ac-brotherhood-docs/-/wikis/RMC) for details and full service list).
+Generally speaking, Hermes is a task-based facade (programming interface) for RMC services both from the original SDK (OSDK) and Ubisoft's custom RMC protocols (see [RMC](RMC.md) for details and full service list).
 
 Since Hermes is only a Quazal RMC interface it is not strictly bound to the engine and was used in:
 - Assassin's Creed Brotherhood (Anvil)
@@ -26,4 +26,4 @@ Hermes unifies the workflow for RMC service calls:
 
 # Online Events
 
-The game's workflow depends on scheduling and dispatching job-like structures called Online Events. Those events can be scheduled externally via [notification events](https://gitlab.com/phoenix-network-ltd/ac-brotherhood-docs/-/wikis/RMC-Notification-Protocol) as well as by the game internally.
+The game's workflow depends on scheduling and dispatching job-like structures called Online Events. Those events can be scheduled externally via [notification events](/RMC-Notification-Protocol.md) as well as by the game internally.

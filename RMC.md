@@ -68,38 +68,38 @@ Note that not all of these services (especially OSDK ones) are used by the game,
 | 03 | [NAT Traversal](https://github.com/kinnay/NintendoClients/wiki/NAT-Traversal-Protocol) | client and server | OSDK |
 | 0A | [Authentication](https://github.com/kinnay/NintendoClients/wiki/Authentication-Protocol) | client | OSDK |
 | 0B | [Secure](https://github.com/kinnay/NintendoClients/wiki/Secure-Protocol) | client | OSDK |
-| 0E | [Notifications](https://gitlab.com/phoenix-network-ltd/ac-brotherhood-docs/-/wikis/RMC-Notification-Protocol) | server | OSDK |
+| 0E | [Notifications](/RMC-Notification-Protocol.md) | server | OSDK |
 | 12 | [Health](https://github.com/kinnay/NintendoClients/wiki/Health-Protocol) | client | OSDK |
 | 13 | [Monitoring](https://github.com/kinnay/NintendoClients/wiki/Monitoring-Protocol) | client | OSDK |
 | 14 | [Friends](https://github.com/kinnay/NintendoClients/wiki/Friends-Protocol) | client | OSDK |
 | 15 | [Matchmaking](https://github.com/kinnay/NintendoClients/wiki/Match-Making-Protocol) | client | OSDK |
 | 17 | [Messaging](https://github.com/kinnay/NintendoClients/wiki/Messaging-Protocol) | client | OSDK |
-| 18 | [Persistent Store](https://gitlab.com/phoenix-network-ltd/ac-brotherhood-docs/-/wikis/RMC-Persistent-Store-Protocol) | client | OSDK |
+| 18 | [Persistent Store](/RMC-Persistent-Store-Protocol.md) | client | OSDK |
 | 19 | [Account Mgmt](https://github.com/kinnay/NintendoClients/wiki/Account-Management-Protocol) | client | OSDK |
 | 1B | [Message Delivery](https://github.com/kinnay/NintendoClients/wiki/Message-Delivery-Protocol) | client and server | OSDK |
-| 1D | [Ubi Account Mgmt](https://gitlab.com/phoenix-network-ltd/ac-brotherhood-docs/-/wikis/RMC-Ubi-Account-Management-Protocol) | client | OSDK (Ubi games) |
+| 1D | [Ubi Account Mgmt](/RMC-Ubi-Account-Management-Protocol.md) | client | OSDK (Ubi games) |
 | 1F | [News](https://github.com/kinnay/NintendoClients/wiki/News-Protocol) | client | OSDK |
 | 20 | News Admin | client | OSDK |
-| 21 | [Ubi News](https://gitlab.com/phoenix-network-ltd/ac-brotherhood-docs/-/wikis/RMC-Ubi-News-Protocol) | client | OSDK (Ubi games) |
-| 23 | [Privileges](https://gitlab.com/phoenix-network-ltd/ac-brotherhood-docs/-/wikis/RMC-Privileges-Protocol) | client | OSDK |
-| 24 | [Tracking](https://gitlab.com/phoenix-network-ltd/ac-brotherhood-docs/-/wikis/RMC-Tracking-Protocol) | client | OSDK |
+| 21 | [Ubi News](/RMC-Ubi-News-Protocol.md) | client | OSDK (Ubi games) |
+| 23 | [Privileges](/RMC-Privileges-Protocol.md) | client | OSDK |
+| 24 | [Tracking](/RMC-Tracking-Protocol.md) | client | OSDK |
 | 27 | [Localization](https://github.com/kinnay/NintendoClients/wiki/Localization-Protocol) | client | OSDK |
 | 28 | Localization Admin | client | OSDK |
 | 2A | [Game Session](https://github.com/kinnay/NintendoClients/wiki/Game-Session-Protocol) | client | OSDK |
 | 2B | Game Session Admin | client | OSDK |
 | 32 | [Matchmaking Extended](https://github.com/kinnay/NintendoClients/wiki/Match-Making-Protocol-Ext) | client | OSDK |
 | 65 | [Player Stats]() | client | |
-| 6C | [Hermes Player Statistics](https://gitlab.com/phoenix-network-ltd/ac-brotherhood-docs/-/wikis/RMC-Player-Statistics-Protocol) | client | Hermes |
-| 6D | [Rich Presence](https://gitlab.com/phoenix-network-ltd/ac-brotherhood-docs/-/wikis/RMC-Rich-Presence-Protocol) | client | Hermes |
-| 6E | [Clans](https://gitlab.com/phoenix-network-ltd/ac-brotherhood-docs/-/wikis/RMC-Clans-Protocol) | client | Hermes |
-| 6F | [Tracking Extension](https://gitlab.com/phoenix-network-ltd/ac-brotherhood-docs/-/wikis/RMC-Tracking-Extension-Protocol) | client | |
-| 70 | [Meta Session](https://gitlab.com/phoenix-network-ltd/ac-brotherhood-docs/-/wikis/RMC-Meta-Session-Protocol) | client | Hermes |
-| 71 | [Game Info](https://gitlab.com/phoenix-network-ltd/ac-brotherhood-docs/-/wikis/RMC-Game-Info-Protocol) | client | Hermes |
-| 72 | [Contacts](https://gitlab.com/phoenix-network-ltd/ac-brotherhood-docs/-/wikis/RMC-Contacts-Protocol) | client | Hermes |
-| 74 | [Hermes Achievements](https://gitlab.com/phoenix-network-ltd/ac-brotherhood-docs/-/wikis/RMC-Hermes-Achievements-Protocol) | client | Hermes |
-| 75 | [Social Networks](https://gitlab.com/phoenix-network-ltd/ac-brotherhood-docs/-/wikis/RMC-Social-Networks-Protocol) | client | Hermes |
-| 76 | [Virgin](https://gitlab.com/phoenix-network-ltd/ac-brotherhood-docs/-/wikis/RMC-Virgin-Protocol) | client | Scimitar |
+| 6C | [Hermes Player Statistics](/RMC-Player-Statistics-Protocol.md) | client | Hermes |
+| 6D | [Rich Presence](/RMC-Rich-Presence-Protocol.md) | client | Hermes |
+| 6E | [Clans](/RMC-Clans-Protocol.md) | client | Hermes |
+| 6F | [Tracking Extension](/RMC-Tracking-Extension-Protocol.md) | client | |
+| 70 | [Meta Session](/RMC-Meta-Session-Protocol.md) | client | Hermes |
+| 71 | [Game Info](/RMC-Game-Info-Protocol.md) | client | Hermes |
+| 72 | [Contacts](/RMC-Contacts-Protocol.md) | client | Hermes |
+| 74 | [Hermes Achievements](/RMC-Hermes-Achievements-Protocol.md) | client | Hermes |
+| 75 | [Social Networks](/RMC-Social-Networks-Protocol.md) | client | Hermes |
+| 76 | [Virgin](/RMC-Virgin-Protocol.md) | client | Scimitar |
 | 77 | [Leaderboard]() | client | |
-| 78 | [Uplay Win](https://gitlab.com/phoenix-network-ltd/ac-brotherhood-docs/-/wikis/RMC-Uplay-Win-Protocol) | client | |
+| 78 | [Uplay Win](/RMC-Uplay-Win-Protocol.md) | client | |
 | 79 | [Facebook]() | client | |
 | 7A | [Shop Renting]() | client | |
