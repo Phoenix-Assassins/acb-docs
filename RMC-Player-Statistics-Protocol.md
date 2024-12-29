@@ -207,7 +207,7 @@ This method does not return anything.
 | Type | Name |
 |------|------|
 | Uint32 | unkUint |
-| Uint32 | unkUint |
+| [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | playerName |
 | [List](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#list)<[PlayerStatisticExt](#playerstatisticext-structure)> | statsExt |
 
 ## PlayerStatistic ([Structure](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#structure))
