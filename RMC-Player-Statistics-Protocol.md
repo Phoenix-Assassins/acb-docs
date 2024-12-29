@@ -253,7 +253,7 @@ This method does not return anything.
 | Uint32 | unkUint |
 | Uint64 | unkUlong1 |
 | Uint64 | unkUlong2 |
-| [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | unkUint |
+| [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | unkStr |
 | Uint8 | unkByte |
 
 ## StatQuery ([Structure](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#structure))
