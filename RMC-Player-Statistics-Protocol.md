@@ -49,7 +49,7 @@ This method does not return anything.
 | Type | Name |
 |------|------|
 | [List](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#list)<[StatQuery](#statquery-structure)> | statQueries |
-| [List](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#list)<[String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string)> | unkStrings |
+| [List](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#list)<[String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string)> | playerNames |
 
 ## Response
 
