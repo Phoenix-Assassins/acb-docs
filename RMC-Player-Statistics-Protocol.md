@@ -226,7 +226,7 @@ This method does not return anything.
 | Uint32 | unkUint2 |
 | Uint32 | unkUint3 |
 | [List](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#list)<[PlayerStatisticInfoExt](#playerstatisticinfoext-structure)> | statInfosExt |
-| Uint64 | unkUlong |
+| [DateTime](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#datetime) | dateTime |
 
 ## PlayerStatisticInfo ([Structure](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#structure))
 
