@@ -261,7 +261,7 @@ This method does not return anything.
 | Type | Name |
 |------|------|
 | Uint32 | statID |
-| [List](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#list)\<Uint32\> | valueIDs |
+| [List](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#list)\<Uint32\> | infoIDs |
 
 ## PlayerQuery ([Structure](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#structure))
 
