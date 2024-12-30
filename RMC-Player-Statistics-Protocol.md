@@ -260,8 +260,8 @@ This method does not return anything.
 
 | Type | Name |
 |------|------|
-| Uint32 | unkUint |
-| [List](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#list)\<Uint32\> | statIDs |
+| Uint32 | statID |
+| [List](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#list)\<Uint32\> | valueIDs |
 
 ## PlayerQuery ([Structure](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#structure))
 
