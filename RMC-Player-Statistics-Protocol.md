@@ -222,9 +222,9 @@ This method does not return anything.
 
 | Type | Name |
 |------|------|
+| Uint32 | id |
 | Uint32 | unkUint1 |
 | Uint32 | unkUint2 |
-| Uint32 | unkUint3 |
 | [List](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#list)<[PlayerStatisticInfoExt](#playerstatisticinfoext-structure)> | statInfosExt |
 | [DateTime](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#datetime) | dateTime |
 
@@ -232,17 +232,17 @@ This method does not return anything.
 
 | Type | Name |
 |------|------|
-| Uint8 | unkByte1 |
+| Uint8 | id |
 | [PlayerStatisticValues](#playerstatisticvalues-structure) | statValues |
-| Uint8 | unkByte2 |
+| Uint8 | unkByte |
 
 ## PlayerStatisticInfoExt ([Structure](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#structure))
 
 | Type | Name |
 |------|------|
-| Uint8 | unkByte1 |
+| Uint8 | id |
 | [PlayerStatisticValues](#playerstatisticvalues-structure) | statValues1 |
-| Uint8 | unkByte2 |
+| Uint8 | unkByte |
 | [PlayerStatisticValues](#playerstatisticvalues-structure) | statValues2 |
 | [PlayerStatisticValues](#playerstatisticvalues-structure) | statValues3 |
 
