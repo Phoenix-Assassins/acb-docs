@@ -85,7 +85,7 @@ This method does not return anything.
 |------|------|
 | Uint32 | unkUint1 |
 | Uint32 | unkUint2 |
-| [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | unkString |
+| [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | playerName |
 | Uint32 | unkUint3 |
 | Uint32 | unkUint4 |
 | Uint32 | unkUint5 |
