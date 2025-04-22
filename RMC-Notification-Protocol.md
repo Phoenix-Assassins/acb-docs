@@ -9,9 +9,9 @@ In ACB notification events are processed in `Hermes::PlatformListenerServiceRDV:
 | 1 | any | 0 | OnlineEventDataFriendshipAnswered | 19 |
 | 1 | any | 1 | OnlineEventDataFriendshipAnswered | 18 |
 | 1 | any | 2 | OnlineEventDataFriendshipRequested | 16 |
-| 3 | 1 | any | OnlineEventCustomRDV | 21 |
-| 3 | 2, 8 | any | OnlineEventCustomRDV | 22 |
-| 3 | 3 | any | unknown | none |
+| 3 | 1 | any | ParticipationEvent | 21 |
+| 3 | 2, 8 | any | ParticipationEvent | 22 |
+| 3 | 3 | any | ParticipationEvent | none |
 | 5 | any | any | OnlineEventDataFriendStatus | 15 |
 | 6 | any | any | OnlineEventData | 32 |
 | 7 | 5 | any | OnlineEventDataInvitation | 23 |
