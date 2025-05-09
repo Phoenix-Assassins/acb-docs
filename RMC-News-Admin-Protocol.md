@@ -109,20 +109,6 @@ The definitions come from MacOS version of the game.
 |------|------|
 | [List](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#list)<[NewsChannel](#newschannel-structure)> | channels |
 
-# (6) GetChannelsByIDs
-
-## Request
-
-| Type | Name |
-|------|------|
-| [List](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#list)\<Uint32> | newsChannelIDs |
-
-## Response
-
-| Type | Name |
-|------|------|
-| [List](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#list)<[NewsChannel](#newschannel-structure)> | channels |
-
 # (7) UpdateChannel
 
 ## Request
