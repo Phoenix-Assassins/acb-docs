@@ -79,7 +79,7 @@ Note that not all of these services (especially OSDK ones) are used by the game,
 | 1B | [Message Delivery](https://github.com/kinnay/NintendoClients/wiki/Message-Delivery-Protocol) | client and server | OSDK |
 | 1D | [Ubi Account Mgmt](/RMC-Ubi-Account-Management-Protocol.md) | client | OSDK (Ubi games) |
 | 1F | [News](https://github.com/kinnay/NintendoClients/wiki/News-Protocol) | client | OSDK |
-| 20 | News Admin | client | OSDK |
+| 20 | [News Admin](/RMC-News-Admin-Protocol.md) | client | OSDK |
 | 21 | [Ubi News](/RMC-Ubi-News-Protocol.md) | client | OSDK (Ubi games) |
 | 23 | [Privileges](/RMC-Privileges-Protocol.md) | client | OSDK |
 | 24 | [Tracking](/RMC-Tracking-Protocol.md) | client | OSDK |
