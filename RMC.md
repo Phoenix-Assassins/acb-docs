@@ -99,7 +99,7 @@ Note that not all of these services (especially OSDK ones) are used by the game,
 | 74 | [Hermes Achievements](/RMC-Hermes-Achievements-Protocol.md) | client | Hermes |
 | 75 | [Social Networks](/RMC-Social-Networks-Protocol.md) | client | Hermes |
 | 76 | [Virgin](/RMC-Virgin-Protocol.md) | client | Scimitar |
-| 77 | [Leaderboard]() | client | |
+| 77 | [AC2 Rome Leaderboard](/RMC-AC2-Rome-Leaderboard-Protocol.md) | client | Hermes |
 | 78 | [Uplay Win](/RMC-Uplay-Win-Protocol.md) | client | |
-| 79 | [Facebook]() | client | |
-| 7A | [Shop Renting]() | client | |
+| 79 | [ACB Proxy Game Profile](/RMC-ACB-Proxy-Game-Profile-Protocol.md) | client | Hermes |
+| 7A | [Shop Renting](/RMC-Shop-Renting-Protocol.md) | client | Hermes |
