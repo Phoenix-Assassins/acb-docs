@@ -84,7 +84,7 @@ Note that not all of these services (especially OSDK ones) are used by the game,
 | 23 | [Privileges](/RMC-Privileges-Protocol.md) | client | OSDK |
 | 24 | [Tracking](/RMC-Tracking-Protocol.md) | client | OSDK |
 | 27 | [Localization](https://github.com/kinnay/NintendoClients/wiki/Localization-Protocol) | client | OSDK |
-| 28 | Localization Admin | client | OSDK |
+| 28 | [Localization Admin](/RMC-Localization-Admin-Protocol.md) | client | OSDK |
 | 2A | [Game Session](https://github.com/kinnay/NintendoClients/wiki/Game-Session-Protocol) | client | OSDK |
 | 2B | [Game Session Admin](/RMC-Game-Session-Admin-Protocol.md) | client | OSDK |
 | 32 | [Matchmaking Extended](https://github.com/kinnay/NintendoClients/wiki/Match-Making-Protocol-Ext) | client | OSDK |
