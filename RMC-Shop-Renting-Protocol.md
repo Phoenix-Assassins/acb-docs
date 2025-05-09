@@ -24,8 +24,6 @@ The definitions come from MacOS version of the game.
 
 # (2) RentShop
 
-This method is not implemented by the Windows version.
-
 ## Request
 
 | Type | Name |
