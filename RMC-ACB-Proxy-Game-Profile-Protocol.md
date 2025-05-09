@@ -1,4 +1,4 @@
-A custom Hermes RMC service for game saves and remote assassin missions/contracts management.
+A custom Hermes RMC service for game saves and remote assassin missions/contracts management in singleplayer mode.
 
 The definitions come from MacOS version of the game.
 
