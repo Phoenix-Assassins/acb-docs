@@ -86,7 +86,7 @@ Note that not all of these services (especially OSDK ones) are used by the game,
 | 27 | [Localization](https://github.com/kinnay/NintendoClients/wiki/Localization-Protocol) | client | OSDK |
 | 28 | Localization Admin | client | OSDK |
 | 2A | [Game Session](https://github.com/kinnay/NintendoClients/wiki/Game-Session-Protocol) | client | OSDK |
-| 2B | Game Session Admin | client | OSDK |
+| 2B | [Game Session Admin](/RMC-Game-Session-Admin-Protocol.md) | client | OSDK |
 | 32 | [Matchmaking Extended](https://github.com/kinnay/NintendoClients/wiki/Match-Making-Protocol-Ext) | client | OSDK |
 | 65 | [Single Player Statistics](/RMC-Single-Player-Statistics-Protocol.md) | client | Hermes |
 | 6C | [Hermes Player Statistics](/RMC-Player-Statistics-Protocol.md) | client | Hermes |
