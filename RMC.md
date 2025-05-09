@@ -88,11 +88,11 @@ Note that not all of these services (especially OSDK ones) are used by the game,
 | 2A | [Game Session](https://github.com/kinnay/NintendoClients/wiki/Game-Session-Protocol) | client | OSDK |
 | 2B | Game Session Admin | client | OSDK |
 | 32 | [Matchmaking Extended](https://github.com/kinnay/NintendoClients/wiki/Match-Making-Protocol-Ext) | client | OSDK |
-| 65 | [Player Stats]() | client | |
+| 65 | [Single Player Statistics](/RMC-Single-Player-Statistics-Protocol.md) | client | Hermes |
 | 6C | [Hermes Player Statistics](/RMC-Player-Statistics-Protocol.md) | client | Hermes |
 | 6D | [Rich Presence](/RMC-Rich-Presence-Protocol.md) | client | Hermes |
 | 6E | [Clans](/RMC-Clans-Protocol.md) | client | Hermes |
-| 6F | [Tracking Extension](/RMC-Tracking-Extension-Protocol.md) | client | |
+| 6F | [Tracking Extension](/RMC-Tracking-Extension-Protocol.md) | client | OSDK (Ubi games) |
 | 70 | [Meta Session](/RMC-Meta-Session-Protocol.md) | client | Hermes |
 | 71 | [Game Info](/RMC-Game-Info-Protocol.md) | client | Hermes |
 | 72 | [Contacts](/RMC-Contacts-Protocol.md) | client | Hermes |
@@ -100,6 +100,6 @@ Note that not all of these services (especially OSDK ones) are used by the game,
 | 75 | [Social Networks](/RMC-Social-Networks-Protocol.md) | client | Hermes |
 | 76 | [Virgin](/RMC-Virgin-Protocol.md) | client | Scimitar |
 | 77 | [AC2 Rome Leaderboard](/RMC-AC2-Rome-Leaderboard-Protocol.md) | client | Hermes |
-| 78 | [Uplay Win](/RMC-Uplay-Win-Protocol.md) | client | |
+| 78 | [Uplay Win](/RMC-Uplay-Win-Protocol.md) | client | OSDK (Ubi games) |
 | 79 | [ACB Proxy Game Profile](/RMC-ACB-Proxy-Game-Profile-Protocol.md) | client | Hermes |
 | 7A | [Shop Renting](/RMC-Shop-Renting-Protocol.md) | client | Hermes |
