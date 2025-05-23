@@ -39,7 +39,7 @@ This method does not return anything.
 
 | Type | Name |
 |------|------|
-| Uint32 | unkUint1 |
+| Uint32 | pid |
 | Bool | unkBool |
 | Uint32 | unkUint2 |
 | [qBuffer](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#qbuffer) | buffer |
