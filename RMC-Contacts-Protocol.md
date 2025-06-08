@@ -4,7 +4,7 @@ A custom Hermes RMC service for friend game session management.
 |-----------|-------------|
 | 1 | Unused |
 | 2 | Unused |
-| 3 | [GetFriendsGameSession](#3-getfriendsgamesession) |
+| 3 | [GetFriendsGameSessions](#3-getfriendsgamesessions) |
 
 # (1) Unused
 
@@ -38,7 +38,7 @@ Sessions' class might extend the original [`Gathering`](https://github.com/kinna
 |------|------|
 | [List](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#list)<[Gathering](https://github.com/kinnay/NintendoClients/wiki/Match-Making-Types#gathering-structure)> | sessions |
 
-# (3) GetFriendsGameSession
+# (3) GetFriendsGameSessions
 
 ## Request
 
