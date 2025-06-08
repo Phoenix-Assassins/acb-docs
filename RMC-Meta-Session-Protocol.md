@@ -4,22 +4,22 @@ A custom Hermes RMC service for backend metasessions.
 |-----------|-------------|
 | 1 | [SendConnectionInformation](#1-sendconnectioninformation) |
 | 2 | [RetrieveSubSessionInformation](#2-retrievesubsessioninformation) |
-| 3 | Unused |
-| 4 | Unused  |
+| 3 | [SendSessionKey](#3-sendsessionkey) |
+| 4 | [GetSessionKey](#4-getsessionkey)  |
 | 5 | [JoinMetaSession](#5-joinmetasession) |
-| 6 | [JoinMetaSessionById](#6-joinmetasessionbyid) |
-| 7 | [ChangeSubSession](#7-changesubsession) |
+| 6 | [JoinMetasessionWithId](#6-joinmetasessionwithid) |
+| 7 | [ChooseSubSession](#7-choosesubsession) |
 | 8 | [SearchMetasession](#8-searchmetasession) |
 | 9 | [ValidateConnection](#9-validateconnection) |
 | 10 | [ValidateConnectionInfo](#10-validateconnectioninfo) |
-| 11 | [LeaveMetasession](#11-leavemetasession) |
-| 12 | [UpdateScores](#12-updatescores) |
-| 13 | [GetRankingMetasession](#13-getrankingmetasession) |
+| 11 | [LeaveMetaSession](#11-leavemetasession) |
+| 12 | [UpdateScore](#12-updatescore) |
+| 13 | [GetRanking](#13-getranking) |
 | 14 | [UpdateNewHost](#14-updatenewhost) |
-| 15 | [UpdateNewHostWithData](#15-updatenewhostwithdata) |
-| 16 | [IsPresent](#16-ispresent) |
-| 17 | [IsPresentByName](#17-ispresentbyname) |
-| 18 | [IsPresentByMetaSesId](#18-ispresentbymetasesid) |
+| 15 | [UpdateNewHostWithArguments](#15-updatenewhostwitharguments) |
+| 16 | [IsPresentInMetasessionPCPlatform](#16-ispresentinmetasessionpcplatform) |
+| 17 | [IsPresentInMetasessionPS3Platform](#17-ispresentinmetasessionps3platform) |
+| 18 | [IsPresentInMetasessionXboxPlatform](#18-ispresentinmetasessionxboxplatform) |
 
 # (1) SendConnectionInformation
 
@@ -49,13 +49,13 @@ This method does not take any parameters.
 | [qBuffer](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#qbuffer) | buffer |
 | Uint32 | unkUint |
 
-# (3) Unused
+# (3) SendSessionKey
 
 ## Request
 
 | Type | Name |
 |------|------|
-| [qBuffer](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#qbuffer) | buffer |
+| [qBuffer](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#qbuffer) | sesKey |
 
 ## Response
 
@@ -63,7 +63,7 @@ This method does not take any parameters.
 |------|------|
 | Uint32 | unkUint |
 
-# (4) Unused
+# (4) GetSessionKey
 
 ## Request
 
@@ -92,7 +92,7 @@ This method does not take any parameters.
 | Uint32 | unkUint1 |
 | Uint32 | unkUint2 |
 
-# (6) JoinMetaSessionById
+# (6) JoinMetasessionWithId
 
 ## Request
 
@@ -106,7 +106,7 @@ This method does not take any parameters.
 |------|------|
 | Uint32 | unkUint |
 
-# (7) ChangeSubSession
+# (7) ChooseSubSession
 
 ## Request
 
@@ -160,7 +160,7 @@ This method does not return anything.
 
 This method does not return anything.
 
-# (11) LeaveMetasession
+# (11) LeaveMetaSession
 
 ## Request
 
@@ -170,7 +170,7 @@ This method does not take any parameters.
 
 This method does not return anything.
 
-# (12) UpdateScores
+# (12) UpdateScore
 
 ## Request
 
@@ -182,7 +182,7 @@ This method does not return anything.
 
 This method does not return anything.
 
-# (13) GetRankingMetasession
+# (13) GetRanking
 
 ## Request
 
@@ -211,7 +211,7 @@ This method does not take any parameters.
 
 This method does not return anything.
 
-# (15) UpdateNewHostWithData
+# (15) UpdateNewHostWithArguments
 
 ## Request
 
@@ -223,7 +223,7 @@ This method does not return anything.
 
 This method does not return anything.
 
-# (16) IsPresent
+# (16) IsPresentInMetasessionPCPlatform
 
 ## Request
 
