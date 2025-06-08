@@ -2,96 +2,81 @@ A custom Hermes RMC service for social activity management. No trace of standard
 
 | Method ID | Method Name |
 |-----------|-------------|
-| 1 | [Unused](#1-unused) |
-| 2 | [Unused](#2-unused) |
-| 3 | [Unused](#3-unused) |
-| 4 | [Unused](#4-unused) |
-| 5 | [Unused](#5-unused) |
-| 6 | [Unused](#6-unused) |
+| 1 | [PostTwitterMessage](#1-posttwittermessage) |
+| 2 | [PostFBMessage](#2-postfbmessage) |
+| 3 | [RevokeFBAuthorization](#3-revokefbauthorization) |
+| 4 | [RevokeTwitterAuthorization](#4-revoketwitterauthorization) |
+| 5 | [HasFBAuthorization](#5-hasfbauthorization) |
+| 6 | [HasTwitterAuthorization](#6-hastwitterauthorization) |
 
-# (1) Unused
+# (1) PostTwitterMessage
 
 ## Request
 
 | Type | Name |
 |------|------|
-| Uint32 | unkUint |
-| [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | unkString |
-
+| [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | message |
 
 ## Response
 
 This method does not return anything.
 
-# (2) Unused
+# (2) PostFBMessage
 
 ## Request
 
 | Type | Name |
 |------|------|
-| Uint32 | unkUint |
-| Bool | unkBool |
-
+| [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | unkStr1 |
+| [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | unkStr2 |
+| [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | unkStr3 |
+| [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | unkStr4 |
+| [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | unkStr5 |
 
 ## Response
 
 This method does not return anything.
 
-# (3) Unused
+# (3) RevokeFBAuthorization
 
 ## Request
 
-| Type | Name |
-|------|------|
-| Uint32 | unkUint |
-| Bool | unkBool |
-
+This method does not take any parameters.
 
 ## Response
 
 This method does not return anything.
 
-# (4) Unused
+# (4) RevokeTwitterAuthorization
 
 ## Request
 
-| Type | Name |
-|------|------|
-| [List](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#list)\<Uint32\> | unkUints |
-
+This method does not take any parameters.
 
 ## Response
 
 This method does not return anything.
 
-# (5) Unused
+# (5) HasFBAuthorization
 
 ## Request
 
-| Type | Name |
-|------|------|
-| Uint32 | unkUint |
-| [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | unkString |
-
+This method does not take any parameters.
 
 ## Response
 
 | Type | Name |
 |------|------|
-| Bool | unkBool |
+| Bool | %retval% |
 
-# (6) Unused
+# (6) HasTwitterAuthorization
 
 ## Request
 
-| Type | Name |
-|------|------|
-| [List](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#list)\<Uint32\> | unkUints |
-| Uint32 | unkUint |
-
+This method does not take any parameters.
 
 ## Response
 
 | Type | Name |
 |------|------|
-| Bool | unkBool |
+| Bool | %retval% |
