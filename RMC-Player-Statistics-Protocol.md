@@ -7,13 +7,13 @@ A custom Hermes RMC service for game statistics management.
 | 3 | [ReadPlayerStats](#3-readplayerstats) |
 | 4 | [ReadStatsLeaderboardByRange](#4-readstatsleaderboardbyrange) |
 | 5 | [ReadStatsLeaderboardByRangeForPlayer](#5-readstatsleaderboardbyrangeforplayer) |
-| 6 | [ReadStatsLeaderboardByPlayerNames](#6-readstatsleaderboardbyplayernames) |
+| 6 | [ReadStatsLeaderboardForPlayers](#6-readstatsleaderboardforplayers) |
 | 7 | [ReadStatsLeaderboardFromSlidingTable](#7-readstatsleaderboardfromslidingtable) |
 | 8 | [GetFilter](#8-getfilter) |
 | 9 | [ActivateFilter](#9-activatefilter) |
 | 10 | [DeactivateFilter](#10-deactivatefilter) |
-| 11 | Unused |
-| 12 | Unused |
+| 11 | [ReadScoreByIds](#11-readscorebyids) |
+| 12 | [ReadScoreByRank](#12-readscorebyrank) |
 
 # (1) SendArbitratedPlayerStats
 
@@ -24,7 +24,6 @@ A custom Hermes RMC service for game statistics management.
 | Uint32 | unkUint1 |
 | Uint32 | unkUint2 |
 | [List](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#list)<[PlayerStatistic](#playerstatistic-structure)> | playerStats |
-
 
 ## Response
 
@@ -97,7 +96,7 @@ This method does not return anything.
 | [List](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#list)<[PlayerStatContainer](#playerstatcontainer-structure)> | statContainers |
 | Uint32 | unkUint |
 
-# (6) ReadStatsLeaderboardByPlayerNames
+# (6) ReadStatsLeaderboardForPlayers
 
 ## Request
 
@@ -167,23 +166,23 @@ This method does not return anything.
 
 This method does not return anything.
 
-# (11) Unused
+# (11) ReadScoreByIds
 
 ## Request
 
 | Type | Name |
 |------|------|
 | Uint32 | unkUint |
-| [List](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#list)\<you will not make use of this\> | unkObjs |
+| [List](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#list)<[ScoreListOut](#scorelistout-structure)> | scoreLists |
 
 ## Response
 
 | Type | Name |
 |------|------|
-| [List](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#list)\<you will not make use of this\> | unkObjs |
+| [List](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#list)<[ScoreListOut](#scorelistout-structure)> | scoreLists |
 | Uint32 | unkUint |
 
-# (12) Unused
+# (12) ReadScoreByRank
 
 ## Request
 
@@ -197,7 +196,7 @@ This method does not return anything.
 
 | Type | Name |
 |------|------|
-| [List](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#list)\<you will not make use of this\> | unkObjs |
+| [List](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#list)<[ScoreListOut](#scorelistout-structure)> | scoreLists |
 | Uint32 | unkUint |
 
 # Types
@@ -276,5 +275,14 @@ This method does not return anything.
 |------|------|
 | Uint32 | unkUint1 |
 | Bool | unkBool |
+| Uint32 | unkUint2 |
+| Uint32 | unkUint3 |
+
+## ScoreListOut ([Structure](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#structure))
+
+| Type | Name |
+|------|------|
+| Uint32 | unkUint1 |
+| [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | unkStr |
 | Uint32 | unkUint2 |
 | Uint32 | unkUint3 |
