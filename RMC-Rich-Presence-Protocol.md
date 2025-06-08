@@ -2,8 +2,8 @@ A custom Hermes RMC service for player rich presence inside the game.
 
 | Method ID | Method Name |
 |-----------|-------------|
-| 1 | SetPresence |
-| 2 | GetPresence |
+| 1 | [SetPresence](#1-setpresence) |
+| 2 | [GetPresence](#2-getpresence) |
 
 # (1) SetPresence
 
@@ -12,7 +12,7 @@ A custom Hermes RMC service for player rich presence inside the game.
 | Type | Name |
 |------|------|
 | Uint32 | pid |
-| [qBuffer](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#qbuffer) | buffer |
+| [qBuffer](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#qbuffer) | props |
 
 ## Response
 
@@ -40,6 +40,6 @@ This method does not return anything.
 | Type | Name |
 |------|------|
 | Uint32 | pid |
-| Bool | unkBool |
+| Bool | overrideStatus |
 | Uint32 | unkUint2 |
-| [qBuffer](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#qbuffer) | buffer |
+| [qBuffer](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#qbuffer) | props |
