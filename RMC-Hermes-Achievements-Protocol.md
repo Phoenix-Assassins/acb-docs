@@ -2,18 +2,17 @@ A custom Hermes RMC service for achievements. No trace of standard usage in ACB 
 
 | Method ID | Method Name |
 |-----------|-------------|
-| 1 | [Unused](#1-unused) |
-| 2 | [Unused](#2-unused) |
-| 3 | [Unused](#3-unused) |
+| 1 | [ReadAchievementDetails](#1-readachievementdetails) |
+| 2 | [ReadAchievementSet](#2-readachievementset) |
+| 3 | [UnlockAchievements](#3-unlockachievements) |
 
-# (1) Unused
+# (1) ReadAchievementDetails
 
 ## Request
 
 | Type | Name |
 |------|------|
-| [HermesAchievement](#hermesachievement-structure) | achievement |
-
+| Uint32 | unkUint |
 
 ## Response
 
@@ -21,27 +20,25 @@ A custom Hermes RMC service for achievements. No trace of standard usage in ACB 
 |------|------|
 | [HermesAchievement](#hermesachievement-structure) | achievement |
 
-# (2) Unused
+# (2) ReadAchievementSet
 
 ## Request
 
-| Type | Name |
-|------|------|
-| [List]()<[HermesAchievement](#hermesachievement-structure)> | achievements |
+This method does not take any parameters.
 
 ## Response
 
 | Type | Name |
 |------|------|
-| [List]()<[HermesAchievement](#hermesachievement-structure)> | achievements |
+| [List](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#list)<[HermesAchievement](#hermesachievement-structure)> | achievements |
 
-# (3) Unused
+# (3) UnlockAchievements
 
 ## Request
 
 | Type | Name |
 |------|------|
-| | [List]()\<Uint32\> | achievementIds |
+| [List](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#list)\<Uint32\> | achievementIds |
 
 ## Response
 
