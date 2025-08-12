@@ -13,8 +13,8 @@ The game communicates with services of:
 - [RMC](/RMC.md)
 - [RC4 encryption](https://github.com/zeroKilo/GROBackendWV/wiki/QPacket-Encryption)
 - [Zlib compression](https://github.com/zeroKilo/GROBackendWV/wiki/QPacket-Compression)
-- [Duplicated Objects](https://github.com/zeroKilo/GROBackendWV/wiki/DO)
-- [DO RMC](https://github.com/zeroKilo/GROBackendWV/wiki/DO-RMC-Calls)
+- [Duplicated Objects](/DO.md)
+- [DO RMC](/DO-RMC.md)
 
 ## General flow
 When a player launches a game, first it communicates with Ubisoft Connect services via `ubiorbitapi_r2_loader.dll` to verify the access to a copy of the game. Little is known of Ubisoft's ORBITAPI and Uplay DRM services and as they are going to remain live, they are out of scope of this project. An original copy of the game linked to a Ubisoft account is required.
