@@ -239,7 +239,7 @@ This method does not return anything.
 | Uint32 | unkUint |
 | [MetaSessionInfo](#metasessioninfo-structure) | metaSesInfo |
 
-# (17) IsPresentByName
+# (17) IsPresentInMetasessionPS3Platform
 
 ## Request
 
@@ -255,7 +255,7 @@ This method does not return anything.
 | Uint32 | unkUint |
 | [MetaSessionInfo](#metasessioninfo-structure) | metaSesInfo |
 
-# (18) IsPresentByMetaSesId
+# (18) IsPresentInMetasessionXboxPlatform
 
 ## Request
 
