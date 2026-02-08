@@ -12,9 +12,9 @@ The service schema was found in Ghost Recon Online's binary, it misses 2 methods
 | 7 | [UplayWelcome](#7-uplaywelcome) |
 | 8 | [SetActionCompleted](#8-setactioncompleted) |
 | 9 | [SetActionsCompleted](#9-setactionscompleted) |
-| 10 | [Unknown](#10-unknown) |
+| 10 | [SetActionsCompletedEncrypted](#10-setactionscompletedencrypted) |
 | 11 | [GetUserToken](#11-getusertoken) |
-| 12 | [Unknown](#12-unknown) |
+| 12 | [GetUserPublicKey](#12-getuserpublickey) |
 | 13 | [GetVirtualCurrencyUserBalance](#13-getvirtualcurrencyuserbalance) |
 | 14 | [GetSectionsByKey](#14-getsectionsbykey) |
 
@@ -29,7 +29,6 @@ The service schema was found in Ghost Recon Online's binary, it misses 2 methods
 | [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | sortExpression |
 | [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | cultureName |
 | [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | platformCode|
-
 
 ## Response
 
@@ -49,7 +48,6 @@ The service schema was found in Ghost Recon Online's binary, it misses 2 methods
 | [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | cultureName |
 | [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | platformCode|
 
-
 ## Response
 
 | Type | Name |
@@ -64,7 +62,6 @@ The service schema was found in Ghost Recon Online's binary, it misses 2 methods
 |------|------|
 | [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | platformCode|
 
-
 ## Response
 
 | Type | Name |
@@ -78,7 +75,6 @@ The service schema was found in Ghost Recon Online's binary, it misses 2 methods
 | Type | Name |
 |------|------|
 | [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | platformCode|
-
 
 ## Response
 
@@ -130,7 +126,6 @@ Available rewards:
 | [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | cultureName |
 | [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | platformCode|
 
-
 ## Response
 
 | Type | Name |
@@ -145,7 +140,6 @@ Available rewards:
 |------|------|
 | [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | cultureName |
 | [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | platformCode|
-
 
 ## Response
 
@@ -163,7 +157,6 @@ Available rewards:
 | [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | cultureName |
 | [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | platformCode|
 
-
 ## Response
 
 | Type | Name |
@@ -180,18 +173,20 @@ Available rewards:
 | [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | cultureName |
 | [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | platformCode|
 
-
 ## Response
 
 | Type | Name |
 |------|------|
 | [List](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#list)<[UplayAction](#uplayaction)> | actionList |
 
-# (10) Unknown
+# (10) SetActionsCompletedEncrypted
 
 ## Request
 
-Unknown.
+| Type | Name |
+|------|------|
+| [List](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#list)<[qBuffer](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#qbuffer)> | actionCodeListEncrypted |
+| [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | unkStr |
 
 ## Response
 
@@ -211,17 +206,17 @@ This method does not take any parameters.
 |------|------|
 | [String](https://github.com/kinnay/NintendoClients/wiki/NEX-Common-Types#string) | token |
 
-# (12) Unknown
+# (12) GetUserPublicKey
 
 ## Request
 
-Unknown.
+This method does not take any parameters.
 
 ## Response
 
 | Type | Name |
 |------|------|
-| Uint16 | unknown |
+| Uint16 | key |
 
 # (13) GetVirtualCurrencyUserBalance
 
