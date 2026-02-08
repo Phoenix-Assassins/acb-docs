@@ -1,5 +1,4 @@
 # Online events
-
 Processed by internal registered event handlers of `Menu::MultiplayerMenu`.
 
 ## Session events
@@ -99,9 +98,7 @@ Processed by `Menu::MultiplayerMenu::HandleSessionEvent`(0xEA5140).
 | 87 | OnlineEventPlayerUpdated |
 
 ## UI events
-
 The events of `UIMultiEvent_MultiplayerMenu::EventType` enum.
-
 
 Processed by `Menu::MultiplayerMenu::HandleUIEvent`(0xEA4B30).
 

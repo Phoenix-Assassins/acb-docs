@@ -1,27 +1,26 @@
-This page describes the general idea of the networking solution and systems used by the game.
-
-## Overview
-The game communicates with services of:
+# Networking
+## Services
+The game communicates with:
 - Ubisoft Connect (Uplay)
-- ubi.com
-- Quazal game servers
+- ubi.com (web APIs)
+- PRUDP game servers
 
-## Subsections
+## Protocols and transport
  For specific information on networking see [GRO wikis](https://github.com/zeroKilo/GROBackendWV/wiki) and pages listed below.
 - [HTTP](https://github.com/zeroKilo/GROBackendWV/wiki/TCP-Webrequests)
 - [PRUDP](https://github.com/zeroKilo/GROBackendWV/wiki/PRUDP-Quazal-NetZ)
-- [RMC](/RMC.md)
+- [RMC](/RMC/README.md)
 - [RC4 encryption](https://github.com/zeroKilo/GROBackendWV/wiki/QPacket-Encryption)
 - [Zlib compression](https://github.com/zeroKilo/GROBackendWV/wiki/QPacket-Compression)
-- [Duplicated Objects](/DO.md)
-- [DO RMC](/DO-RMC.md)
+- [Duplicated Objects](/DO/README.md)
+- [DO RMC](/DO/DO-RMC.md)
 
 ## General flow
 When a player launches a game, first it communicates with Ubisoft Connect services via `ubiorbitapi_r2_loader.dll` to verify the access to a copy of the game. Little is known of Ubisoft's ORBITAPI and Uplay DRM services and as they are going to remain live, they are out of scope of this project. An original copy of the game linked to a Ubisoft account is required.
 
 The game consists of 2 executables:
-- ACBSP.exe (singleplayer)
-- ACBMP.exe (multiplayer)
+- `ACBSP.exe` (singleplayer)
+- `ACBMP.exe` (multiplayer)
 
 The singleplayer binary is launched initially, when a player chooses multiplayer mode from the menu it's closed and the multiplayer version launches.
 
@@ -104,11 +103,3 @@ The servers needed to emulate the network traffic:
 - HTTP server with `/OnlineConfigService.svc/GetOnlineConfig` endpoint - original domain `onlineconfigservice.ubi.com` should be redirected to the target domain, preferably by Windows `hosts` file entry
 - UDP authentication server - ticket-granting PRUDP server on the port sent in `SandboxUrl`
 - UDP RDV server - main backend PRUDP server, port number is that of `SandboxUrl` incremented by 1
-
-## Protocols
-The game shares PRUDP protocol stack with `Tom Clancy's Ghost Recon Online` which is available [here](https://github.com/zeroKilo/GROBackendWV/wiki/Overview#layers-of-protocols).
-
-The highest-layer known protocols for the above servers are:
-- HTTP server - HTTP, no SSL, response in JSON format
-- UDP authentication/RDV server - Quazal's [RMC (Remote Method Calls)](https://github.com/zeroKilo/GROBackendWV/wiki/RMC)
-- ACB uses Quazal's Duplicated Objects (DO) for in-game communication (P2P)

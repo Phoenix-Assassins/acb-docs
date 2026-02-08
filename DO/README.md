@@ -1,4 +1,4 @@
-# Duplicated Objects
+# Duplicated Objects (DO)
 
 P2P packets use [Duplicated Objects](https://github.com/zeroKilo/GROBackendWV/wiki/DO) protocol on top of PRUDP.
 

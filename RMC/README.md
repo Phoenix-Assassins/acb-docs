@@ -1,6 +1,8 @@
-Every game built with Quazal uses RMC (Remote Method Calls) protocol to implement the needed backend services. The protocol is used by the authentication server and Rendez-Vous.
+# Remote Method Calls (RMC)
 
-# Overview
+Every game built with Quazal uses RMC protocol to implement the needed backend services. The protocol is used by the authentication server and Rendez-Vous.
+
+## Overview
 
 Quazal's RMC is a backend protocol on top of PRUDP based on RPC-type of services. They were originally called protocols but think of those as microservices, the name is unfortunate so we'll call them services from now on.
 
@@ -12,7 +14,7 @@ While for the majority of services transactions are initiated by the game, there
 
 As RMC functions above PRUDP protocol, it is required to set [PRUDP ACK flag](https://github.com/zeroKilo/GROBackendWV/wiki/QPacket-Format#other-prudp-flags) in the response packet or an additional PRUDP packet with ACK flag after a response from the game.
 
-# Packet structure
+## Packet structure
 
 Below you can see an example of PRUDP packet with RMC packet inside its payload.
 ```
@@ -24,7 +26,7 @@ Here's the entire RMC packet extracted:
 11 00 00 00 8A 04 00 00 00 01 00 00 00 06 00 6D 69 6D 61 6B 00
 ```
 
-## RMC Header
+### RMC Header
 
 All the values are big endian-encoded (the least significant byte is on the left).
 ```
@@ -40,7 +42,7 @@ Let's break down the header ([see GRO wiki for encoding details](https://github.
 
 Having understood protocol and method IDs we can conclude that the packet is a request for [(1) Login](https://github.com/kinnay/NintendoClients/wiki/Authentication-Protocol#1-login) method of the authentication service - usually the first RMC packet to be received in any Quazal-built game.
 
-## RMC Payload
+### RMC Payload
 
 Now all there is left to do is interpret the data the request carries:
 ```
@@ -68,38 +70,38 @@ Note that not all of these services (especially OSDK ones) are used by the game,
 | 03 | [NAT Traversal](https://github.com/kinnay/NintendoClients/wiki/NAT-Traversal-Protocol) | client and server | OSDK |
 | 0A | [Authentication](https://github.com/kinnay/NintendoClients/wiki/Authentication-Protocol) | client | OSDK |
 | 0B | [Secure](https://github.com/kinnay/NintendoClients/wiki/Secure-Protocol) | client | OSDK |
-| 0E | [Notifications](/RMC-Notification-Protocol.md) | server | OSDK |
+| 0E | [Notifications](/NotificationProtocol.md) | server | OSDK |
 | 12 | [Health](https://github.com/kinnay/NintendoClients/wiki/Health-Protocol) | client | OSDK |
 | 13 | [Monitoring](https://github.com/kinnay/NintendoClients/wiki/Monitoring-Protocol) | client | OSDK |
 | 14 | [Friends](https://github.com/kinnay/NintendoClients/wiki/Friends-Protocol) | client | OSDK |
 | 15 | [Matchmaking](https://github.com/kinnay/NintendoClients/wiki/Match-Making-Protocol) | client | OSDK |
 | 17 | [Messaging](https://github.com/kinnay/NintendoClients/wiki/Messaging-Protocol) | client | OSDK |
-| 18 | [Persistent Store](/RMC-Persistent-Store-Protocol.md) | client | OSDK |
+| 18 | [Persistent Store](/PersistentStoreProtocol.md) | client | OSDK |
 | 19 | [Account Mgmt](https://github.com/kinnay/NintendoClients/wiki/Account-Management-Protocol) | client | OSDK |
 | 1B | [Message Delivery](https://github.com/kinnay/NintendoClients/wiki/Message-Delivery-Protocol) | client and server | OSDK |
-| 1D | [Ubi Account Mgmt](/RMC-Ubi-Account-Management-Protocol.md) | client | OSDK (Ubi games) |
+| 1D | [Ubi Account Mgmt](/UbiAccountManagementProtocol.md) | client | OSDK (Ubi games) |
 | 1F | [News](https://github.com/kinnay/NintendoClients/wiki/News-Protocol) | client | OSDK |
-| 20 | [News Admin](/RMC-News-Admin-Protocol.md) | client | OSDK |
-| 21 | [Ubi News](/RMC-Ubi-News-Protocol.md) | client | OSDK (Ubi games) |
-| 23 | [Privileges](/RMC-Privileges-Protocol.md) | client | OSDK |
-| 24 | [Tracking](/RMC-Tracking-Protocol.md) | client | OSDK |
+| 20 | [News Admin](/NewsAdminProtocol.md) | client | OSDK |
+| 21 | [Ubi News](/UbiNewsProtocol.md) | client | OSDK (Ubi games) |
+| 23 | [Privileges](/PrivilegesProtocol.md) | client | OSDK |
+| 24 | [Tracking](/TrackingProtocol.md) | client | OSDK |
 | 27 | [Localization](https://github.com/kinnay/NintendoClients/wiki/Localization-Protocol) | client | OSDK |
-| 28 | [Localization Admin](/RMC-Localization-Admin-Protocol.md) | client | OSDK |
+| 28 | [Localization Admin](/LocalizationAdminProtocol.md) | client | OSDK |
 | 2A | [Game Session](https://github.com/kinnay/NintendoClients/wiki/Game-Session-Protocol) | client | OSDK |
-| 2B | [Game Session Admin](/RMC-Game-Session-Admin-Protocol.md) | client | OSDK |
+| 2B | [Game Session Admin](/GameSessionAdminProtocol.md) | client | OSDK |
 | 32 | [Matchmaking Extended](https://github.com/kinnay/NintendoClients/wiki/Match-Making-Protocol-Ext) | client | OSDK |
-| 65 | [Single Player Statistics](/RMC-Single-Player-Statistics-Protocol.md) | client | Hermes |
-| 6C | [Hermes Player Statistics](/RMC-Player-Statistics-Protocol.md) | client | Hermes |
-| 6D | [Rich Presence](/RMC-Rich-Presence-Protocol.md) | client | Hermes |
-| 6E | [Clans](/RMC-Clans-Protocol.md) | client | Hermes |
-| 6F | [Tracking Extension](/RMC-Tracking-Extension-Protocol.md) | client | OSDK (Ubi games) |
-| 70 | [Meta Session](/RMC-Meta-Session-Protocol.md) | client | Hermes |
-| 71 | [Game Info](/RMC-Game-Info-Protocol.md) | client | Hermes |
-| 72 | [Contacts](/RMC-Contacts-Protocol.md) | client | Hermes |
-| 74 | [Hermes Achievements](/RMC-Hermes-Achievements-Protocol.md) | client | Hermes |
-| 75 | [Social Networks](/RMC-Social-Networks-Protocol.md) | client | Hermes |
-| 76 | [Virgin](/RMC-Virgin-Protocol.md) | client | Scimitar |
-| 77 | [AC2 Rome Leaderboard](/RMC-AC2-Rome-Leaderboard-Protocol.md) | client | Hermes |
-| 78 | [Uplay Win](/RMC-Uplay-Win-Protocol.md) | client | OSDK (Ubi games) |
-| 79 | [ACB Proxy Game Profile](/RMC-ACB-Proxy-Game-Profile-Protocol.md) | client | Hermes |
-| 7A | [Shop Renting](/RMC-Shop-Renting-Protocol.md) | client | Hermes |
+| 65 | [Single Player Statistics](/SinglePlayerStatisticsProtocol.md) | client | Hermes |
+| 6C | [Hermes Player Statistics](/PlayerStatisticsProtocol.md) | client | Hermes |
+| 6D | [Rich Presence](/RichPresenceProtocol.md) | client | Hermes |
+| 6E | [Clans](/ClansProtocol.md) | client | Hermes |
+| 6F | [Tracking Extension](/TrackingExtensionProtocol.md) | client | OSDK (Ubi games) |
+| 70 | [Meta Session](/MetaSessionProtocol.md) | client | Hermes |
+| 71 | [Game Info](/GameInfoProtocol.md) | client | Hermes |
+| 72 | [Contacts](/ContactsProtocol.md) | client | Hermes |
+| 74 | [Hermes Achievements](/HermesAchievementsProtocol.md) | client | Hermes |
+| 75 | [Social Networks](/SocialNetworksProtocol.md) | client | Hermes |
+| 76 | [Virgin](/VirginProtocol.md) | client | Scimitar |
+| 77 | [AC2 Rome Leaderboard](/AC2RomeLeaderboardProtocol.md) | client | Hermes |
+| 78 | [Uplay Win](/UplayWinProtocol.md) | client | OSDK (Ubi games) |
+| 79 | [ACB Proxy Game Profile](/ACBProxyGameProfileProtocol.md) | client | Hermes |
+| 7A | [Shop Renting](/ShopRentingProtocol.md) | client | Hermes |
